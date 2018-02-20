@@ -41,6 +41,34 @@ section {
   padding: 100px 80px;
 }
 
+section:not(.hero):nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+section h3.title {
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section p {
+  max-width: 775px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+  /* height: 500px; */
+}
+
 /* HEADER STYLES */
 
 header {
@@ -72,6 +100,14 @@ header nav {
 
 header nav li {
   margin: 0 15px;
+}
+
+hr {
+  border: 0;
+  margin-top: 30px;
+  width: 250px;
+  background-color: #3f51b5;
+  height: 3px;
 }
 
 /* HERO STYLES */
@@ -124,6 +160,38 @@ header nav li {
 }
 
 /* DESTINATION STYLES */
+
+.destinations .grid li {
+  list-style: none;
+  height: 350px;
+  padding: 20px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.destinations .grid li.small {
+  flex-basis: 30%;
+}
+
+.destinations .grid li.large {
+  flex-basis: 70%;
+}
+
+/* PACKAGES */
+
+.packages .grid li {
+  list-style: none;
+  padding: 50px;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.packages .grid h4.title {
+  font: bold 30px "Open Sans", sans-serif;
+  margin: 35px 0;
+}
+
 
 
 /* @media screen and (max-width: 700px){
